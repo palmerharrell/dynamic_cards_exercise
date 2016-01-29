@@ -1,0 +1,17 @@
+textarea {
+	display: block;
+}
+
+button {
+	margin: 5px 0;
+}
+
+.card {
+	float: left;
+	width: 30%;
+	height: 300px;
+	border: 2px solid royalblue;
+	margin-right: 1%;
+	padding: 1%;
+}
+
