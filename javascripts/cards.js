@@ -19,12 +19,18 @@ function createCard(textInput) {
 	cardContainer.innerHTML += cardTemplate;
 	var currentCard = cardList[cardList.length - 1];
 	currentCard.innerHTML = textInput;
-	console.log(this);
+	for (var i = 0; i < cardList.length; i++) {
+		cardList[i].nextSibling.addEventListener('click', handleDeleteClickEvent);
+	};
 }
 
 function handleCreateClickEvent() {
 	var userInput = cardData.value;
 	createCard(userInput);
+}
+
+function handleDeleteClickEvent(event) {
+	this.parentNode.remove();
 }
 
 createButton.addEventListener('click', handleCreateClickEvent);
