@@ -8,10 +8,11 @@ button {
 
 .card {
 	float: left;
-	width: 30%;
-	height: 300px;
+	width: 29%;
+	min-height: 300px;
 	border: 2px solid royalblue;
 	margin-right: 1%;
+	margin-bottom: 1%;
 	padding: 1%;
 }
 
